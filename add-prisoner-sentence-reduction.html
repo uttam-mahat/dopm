@@ -1,0 +1,1162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <title>Department of Prison Management</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" type="image/x-icon" href="favicon.ico" />
+
+        <link
+            href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700|Roboto:300,400,500,700&display=swap"
+            rel="stylesheet" />
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.6.3/css/all.min.css" />
+
+        <link rel="stylesheet" href="assets/css/icon.css" />
+        <link rel="stylesheet" href="assets/css/style.css" />
+    </head>
+
+    <body>
+
+        <!-- navigation bar start -->
+        <div class="navigation-bar">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg">
+                    <a class="navbar-brand" href="index.html">
+                        <img alt="" class="d-inline-block align-top" src="assets/images/dopm_logo.png" />
+                    </a>
+                    <button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"
+                        class="navbar-toggler" data-target="#navbarNav" data-toggle="collapse" type="button">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                    </button>
+                    <div class="collapse navbar-collapse pull-right" id="navbarNav">
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">
+                                    <span>गृहपृष्ठ </span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="case.html">
+                                    <span>मुद्दा </span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="prisoner-sentence-reduction.html">
+                                    <span>कैद कट्टा </span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="prisoner-character-detail.html">
+                                    <span>कैदीको चाल चलन बिवरण </span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="login.html">
+                                    <span>Login</span>
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" data-id="settings"
+                                    id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    Settings
+                                </a>
+                                <ul class="dropdown-menu mb-0" aria-labelledby="navbarDropdownMenuLink">
+                                    <li class="nav-item">
+                                        <a class="dropdown-item nav-link" href="user-list.html">User List</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item nav-link" href="manage-user-role.html">Manage User
+                                            Role</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item nav-link" href="karagar.html">कारागार कार्यालयहरु</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item nav-link" href="fiscal-year-list.html">Fiscal Year</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item nav-link" href="sentence-discount.html">कैद कट्टा
+                                            प्रतिशत</a>
+                                    </li><li class="nav-item">
+                                        <a class="dropdown-item nav-link" href="prisoner-list.html">Prisoner List</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- navigation bar close -->
+
+        <section class="main-middle-contain-wrapper">
+
+            <section class="add-edit-prisoner-sentence-reduction-page">
+                <div class="container">
+                    <div class="container-fluid">
+                        <div class="row row-flex">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                                <div class="card-box">
+                                    <div class="card-head">
+                                        <header>Add Prisoner Sentence Reduction Detail</header>
+                                    </div>
+                                    <div class="card-body">
+                                        <form id="addEditNewCDOForm" class="addEditNewCDOForm">
+                                            <div class="row">
+                                                <div class="col-lg-4 col-md-6 p-t-10">
+                                                    <div class="mdl-textfield txt-full-width">
+                                                        <label for="prisonName">कारागारको नाम</label>
+                                                        <div type="text" class="form-control not-editable">air fuasd
+                                                            sdif usd</div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4 col-md-6 p-t-10">
+                                                    <div class="mdl-textfield txt-full-width">
+                                                        <label for="reportingPersonName">जाहेरवालाको नाम</label>
+                                                        <input id="reportingPersonName" type="text"
+                                                            class="form-control mdl-textfield_input">
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-12">
+                                                    <div class="mdl-textfield txt-full-width">
+                                                        <div class="sub-header">
+                                                            <header>कैदीको व्यक्तिगत बिवरण</header>
+                                                        </div>
+                                                        <div class="sub- dashed-divider mt-1"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4 col-md-6 p-t-10">
+                                                    <div class="select-input mdl-textfield txt-full-width">
+                                                        <label class="floating-label" for="prisonerName">कैदीको
+                                                            नाम</label>
+                                                        <select class="mdl-textfield_input form-control"
+                                                            id="prisonerName">
+                                                            <option disabled="true" selected="true">---Please Select---
+                                                            </option>
+                                                            <option>ksjdfh</option>
+                                                            <option>sdfkjsdfoi ssdf</option>
+                                                            <option>dfi dd goi</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-lg-4 col-md-6 p-t-10">
+                                                    <div class="mdl-textfield txt-full-width">
+                                                        <label for="permanentAddressOfPrisoner">कैदीको स्थायी
+                                                            ठेगाना</label>
+                                                        <input id="permanentAddressOfPrisoner" type="text"
+                                                            class="form-control mdl-textfield_input">
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4 col-md-6 p-t-10">
+                                                    <div class="mdl-textfield txt-full-width">
+                                                        <label for="prisonerFatherFirstName">कैदीको पिताको पहिलो
+                                                            नाम</label>
+                                                        <input id="prisonerFatherFirstName" type="text"
+                                                            class="form-control mdl-textfield_input">
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4 col-md-6 p-t-10">
+                                                    <div class="mdl-textfield txt-full-width">
+                                                        <label for="prisonerFatherMiddleName">कैदीको पिताको बिचको
+                                                            नाम</label>
+                                                        <input id="prisonerFatherMiddleName" type="text"
+                                                            class="form-control mdl-textfield_input">
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4 col-md-6 p-t-10">
+                                                    <div class="mdl-textfield txt-full-width">
+                                                        <label for="prisonerFatherLastName">कैदीको पिताको थर नाम</label>
+                                                        <input id="prisonerFatherLastName" type="text"
+                                                            class="form-control mdl-textfield_input">
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4 col-md-6 p-t-10">
+                                                    <div class="select-input mdl-textfield txt-full-width">
+                                                        <label class="floating-label"
+                                                            for="nationality">राष्ट्रीयता</label>
+                                                        <select class="mdl-textfield_input form-control"
+                                                            id="nationality">
+                                                            <option disabled="true" selected="true">---Please Select---
+                                                            </option>
+                                                            <option>Nepal</option>
+                                                            <option>India</option>
+                                                            <option>District3</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4 col-md-6 p-t-10">
+                                                    <div class="select-input mdl-textfield txt-full-width">
+                                                        <label class="floating-label" for="genderId">लिङ्ग</label>
+                                                        <select class="mdl-textfield_input form-control" id="genderId">
+                                                            <option disabled="true" selected="true">---Please Select---
+                                                            </option>
+                                                            <option>महिला</option>
+                                                            <option>पुरुष</option>
+                                                            <option>अन्य</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 col-md-6 p-t-10">
+                                                    <div class="row">
+                                                        <div class="col-lg-12 col-md-12 col-12">
+                                                            <div class="mdl-textfield txt-full-width mb-0">
+                                                                <label for="prisonerBirthDate">जन्म मिति</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-6 p-t-10">
+                                                            <div class="mdl-textfield txt-full-width">
+                                                                <label for="prisonerBirthDateYear">बर्ष</label>
+                                                                <input id="prisonerBirthDateYear" type="number"
+                                                                    class="form-control mdl-textfield_input">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-6 p-t-10">
+                                                            <div class="mdl-textfield txt-full-width">
+                                                                <label for="prisonerBirthDateMonth">महिना</label>
+                                                                <input id="prisonerBirthDateMonth" type="number"
+                                                                    class="form-control mdl-textfield_input">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-6 p-t-10">
+                                                            <div class="mdl-textfield txt-full-width">
+                                                                <label for="prisonerBirthDateDay">दिन</label>
+                                                                <input id="prisonerBirthDateDay" type="number"
+                                                                    class="form-control mdl-textfield_input">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-12">
+                                                    <div class="mdl-textfield txt-full-width">
+                                                        <div class="sub-header">
+                                                            <header>मुद्दाको बिवरण</header>
+                                                        </div>
+                                                        <div class="sub- dashed-divider mt-1"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4 col-md-6 p-t-10">
+                                                    <div class="mdl-textfield txt-full-width">
+                                                        <label class="d-block" for="listerInNegativeList">नकरात्मक
+                                                            सूचीमा वा प्रतिबन्धित मुद्दामा परेको/ नपरेको</label>
+                                                        <div class="custom-control custom-radio custom-control-inline">
+                                                            <input class="custom-control-input"
+                                                                id="listerInNegativeListYes" name="listerInNegativeList"
+                                                                type="radio" value="listerInNegativeList">
+                                                            <label class="custom-control-label"
+                                                                for="listerInNegativeListYes">परेको</label>
+                                                        </div>
+                                                        <div class="custom-control custom-radio custom-control-inline">
+                                                            <input class="custom-control-input"
+                                                                id="listerInNegativeListNo" name="listerInNegativeList"
+                                                                type="radio" value="listerInNegativeList">
+                                                            <label class="custom-control-label"
+                                                                for="listerInNegativeListNo">नपरेको</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="row">
+                                                        <div class="col-lg-4 col-md-6 p-t-10">
+                                                            <div class="select-input mdl-textfield txt-full-width">
+                                                                <label class="floating-label"
+                                                                    for="caseId">मुद्दा</label>
+                                                                <select class="mdl-textfield_input form-control"
+                                                                    id="caseId">
+                                                                    <option disabled="true" selected="true">---Please
+                                                                        Select---
+                                                                    </option>
+                                                                    <option value="अपहरण">
+                                                                        अपहरण
+                                                                    </option>
+                                                                    <option value="अपहरण तथा शरीर बन्धक">
+                                                                        अपहरण तथा शरीर बन्धक
+                                                                    </option>
+                                                                    <option value="अप्राकृतिक मैथुन">
+                                                                        अप्राकृतिक मैथुन
+                                                                    </option>
+                                                                    <option value="अभद्र व्यवहार">
+                                                                        अभद्र व्यवहार
+                                                                    </option>
+                                                                    <option value="अवैध सुन कारोवार">
+                                                                        अवैध सुन कारोवार
+                                                                    </option>
+                                                                    <option value="अवैध हुण्डी कारोवार">
+                                                                        अवैध हुण्डी कारोवार
+                                                                    </option>
+                                                                    <option value="आगजनी">
+                                                                        आगजनी
+                                                                    </option>
+                                                                    <option value="आगलागी">
+                                                                        आगलागी
+                                                                    </option>
+                                                                    <option value="आतङ्ककारी">
+                                                                        आतङ्ककारी
+                                                                    </option>
+                                                                    <option value="आत्महत्या दुरुत्साहन">
+                                                                        आत्महत्या दुरुत्साहन
+                                                                    </option>
+                                                                    <option value="कर्तव्य ज्यान">
+                                                                        कर्तव्य ज्यान
+                                                                    </option>
+                                                                    <option value="कालो बजारी">
+                                                                        कालो बजारी
+                                                                    </option>
+                                                                    <option value="किर्ते">
+                                                                        किर्ते
+                                                                    </option>
+                                                                    <option value="कुटपिट/अंगभंग">
+                                                                        कुटपिट/अंगभंग
+                                                                    </option>
+                                                                    <option value="कैदबाट भागे भगाएको">
+                                                                        कैदबाट भागे भगाएको
+                                                                    </option>
+                                                                    <option value="खुन डाँका">
+                                                                        खुन डाँका
+                                                                    </option>
+                                                                    <option value="खोटा टक वा खोटा टिकट चलन">
+                                                                        खोटा टक वा खोटा टिकट चलन
+                                                                    </option>
+                                                                    <option value="गर्भ पतन">
+                                                                        गर्भ पतन
+                                                                    </option>
+                                                                    <option value="गौबध">
+                                                                        गौबध
+                                                                    </option>
+                                                                    <option value="चन्दा">
+                                                                        चन्दा
+                                                                    </option>
+                                                                    <option value="चोरी">
+                                                                        चोरी
+                                                                    </option>
+                                                                    <option value="चौपाया चोरी">
+                                                                        चौपाया चोरी
+                                                                    </option>
+                                                                    <option value="जन्मकैद">
+                                                                        जन्मकैद
+                                                                    </option>
+                                                                    <option value="जवर्जस्ती करणी">
+                                                                        जवर्जस्ती करणी
+                                                                    </option>
+                                                                    <option value="जवर्जस्ती करणी उद्योग">
+                                                                        जवर्जस्ती करणी उद्योग
+                                                                    </option>
+                                                                    <option value="जवर्जस्ती चोरी">
+                                                                        जवर्जस्ती चोरी
+                                                                    </option>
+                                                                    <option value="जासूसी">
+                                                                        जासूसी
+                                                                    </option>
+                                                                    <option value="जीउ मास्ने बेच्ने">
+                                                                        जीउ मास्ने बेच्ने
+                                                                    </option>
+                                                                    <option value="जीउदो बच्चा जन्माई फालेको">
+                                                                        जीउदो बच्चा जन्माई फालेको
+                                                                    </option>
+                                                                    <option value="ज्यान मार्ने उद्योग">
+                                                                        ज्यान मार्ने उद्योग
+                                                                    </option>
+                                                                    <option value="ठगी">
+                                                                        ठगी
+                                                                    </option>
+                                                                    <option value="डाँका">
+                                                                        डाँका
+                                                                    </option>
+                                                                    <option value="डाँका चोरी">
+                                                                        डाँका चोरी
+                                                                    </option>
+                                                                    <option value="दूरसञ्चार ऐन">
+                                                                        दूरसञ्चार ऐन
+                                                                    </option>
+                                                                    <option value="नकवजनी चोरी">
+                                                                        नकवजनी चोरी
+                                                                    </option>
+                                                                    <option value="पुरातात्विक वस्तु सम्बन्धी">
+                                                                        पुरातात्विक वस्तु सम्बन्धी
+                                                                    </option>
+                                                                    <option value="प्राचीन स्मारक सम्बन्धी ">
+                                                                        प्राचीन स्मारक सम्बन्धी
+                                                                    </option>
+                                                                    <option value="बम विष्फोट">
+                                                                        बम विष्फोट
+                                                                    </option>
+                                                                    <option value="बहुविवाह">
+                                                                        बहुविवाह
+                                                                    </option>
+                                                                    <option
+                                                                        value="बालबालिका विरुद्धको यौन शोषण वा हिंसा">
+                                                                        बालबालिका विरुद्धको यौन शोषण वा हिंसा
+                                                                    </option>
+                                                                    <option value="बालविवाह">
+                                                                        बालविवाह
+                                                                    </option>
+                                                                    <option value="बैंकिङ कसूर">
+                                                                        बैंकिङ कसूर
+                                                                    </option>
+                                                                    <option value="बोक्सीको आरोप">
+                                                                        बोक्सीको आरोप
+                                                                    </option>
+                                                                    <option value="भन्सार चोरी निकासी पैठारी">
+                                                                        भन्सार चोरी निकासी पैठारी
+                                                                    </option>
+                                                                    <option value="भवितव्य ">
+                                                                        भवितव्य
+                                                                    </option>
+                                                                    <option value="भ्रष्टाचार">
+                                                                        भ्रष्टाचार
+                                                                    </option>
+                                                                    <option value="महिला विरुद्धको अपराध">
+                                                                        महिला विरुद्धको अपराध
+                                                                    </option>
+                                                                    <option value="महिला बेचविखन">
+                                                                        महिला बेचविखन
+                                                                    </option>
+                                                                    <option value="मानव बेचबिखन तथा ओसार पसार ">
+                                                                        मानव बेचबिखन तथा ओसार पसार
+                                                                    </option>
+                                                                    <option value="मानव अंग प्रत्यारोपन">
+                                                                        मानव अंग प्रत्यारोपन
+                                                                    </option>
+                                                                    <option value="मानवता विरुद्धको अपराध">
+                                                                        मानवता विरुद्धको अपराध
+                                                                    </option>
+                                                                    <option
+                                                                        value="यातना वा क्रुर, निर्मम, अमानवीय वा अपमानजनक व्यवहार ">
+                                                                        यातना वा क्रुर, निर्मम, अमानवीय वा अपमानजनक
+                                                                        व्यवहार
+                                                                    </option>
+                                                                    <option value="युद्ध अपराध ">
+                                                                        युद्ध अपराध
+                                                                    </option>
+                                                                    <option value="लागू औषधको ओसार पसार तथा कारोबार ">
+                                                                        लागू औषधको ओसार पसार तथा कारोबार
+                                                                    </option>
+                                                                    <option value="लेनदेन">
+                                                                        लेनदेन
+                                                                    </option>
+                                                                    <option value="रक्त चन्दन">
+                                                                        रक्त चन्दन
+                                                                    </option>
+                                                                    <option value="राज्य विरुद्धको अपराध">
+                                                                        राज्य विरुद्धको अपराध
+                                                                    </option>
+                                                                    <option value="रहजनी चोरी">
+                                                                        रहजनी चोरी
+                                                                    </option>
+                                                                    <option value="रहदानी">
+                                                                        रहदानी
+                                                                    </option>
+                                                                    <option value="राजस्व चुहावट">
+                                                                        राजस्व चुहावट
+                                                                    </option>
+                                                                    <option value="बन पैदावर">
+                                                                        बन पैदावर
+                                                                    </option>
+                                                                    <option value="विदेशी विनिमय/विदेशी मुद्रा">
+                                                                        विदेशी विनिमय/विदेशी मुद्रा
+                                                                    </option>
+                                                                    <option value="विद्युतीय कारोवार">
+                                                                        विद्युतीय कारोवार
+                                                                    </option>
+                                                                    <option value="वैदेशिक रोजगार कसूर">
+                                                                        वैदेशिक रोजगार कसूर
+                                                                    </option>
+                                                                    <option value="विध्वंशात्मक अपराध ">
+                                                                        विध्वंशात्मक अपराध
+                                                                    </option>
+                                                                    <option value="सङ्गठित अपराध">
+                                                                        सङ्गठित अपराध
+                                                                    </option>
+                                                                    <option value="सम्पत्ति शुद्धीकरण">
+                                                                        सम्पत्ति शुद्धीकरण
+                                                                    </option>
+                                                                    <option value="सरकारी छाप दस्तखत किर्ते">
+                                                                        सरकारी छाप दस्तखत किर्ते
+                                                                    </option>
+                                                                    <option value="सवारी अंगभंग">
+                                                                        सवारी अंगभंग
+                                                                    </option>
+                                                                    <option value="सवारी ज्यान">
+                                                                        सवारी ज्यान
+                                                                    </option>
+                                                                    <option value="सशस्त्र प्रहरी ऐन">
+                                                                        सशस्त्र प्रहरी ऐन
+                                                                    </option>
+                                                                    <option value="सशस्त्र विद्रोह">
+                                                                        सशस्त्र विद्रोह
+                                                                    </option>
+                                                                    <option value="सार्वजनिक अपराध">
+                                                                        सार्वजनिक अपराध
+                                                                    </option>
+                                                                    <option value="सैनिक ऐन">
+                                                                        सैनिक ऐन
+                                                                    </option>
+                                                                    <option value="संरक्षित वनस्पति">
+                                                                        संरक्षित वनस्पति
+                                                                    </option>
+                                                                    <option value="संरक्षित वन्यजन्तु ">
+                                                                        संरक्षित वन्यजन्तु
+                                                                    </option>
+                                                                    <option
+                                                                        value="हातहतियार, खरखजाना तथा विष्फोटक पदार्थ">
+                                                                        हातहतियार, खरखजाना तथा विष्फोटक पदार्थ
+                                                                    </option>
+
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-6 p-t-10 d-flex align-items-center">
+                                                            <button type="button"
+                                                                class="btn primary-btn fill-primary -sm mb-0 mt-2">
+                                                                Add मुद्दा
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <ul class="multiple-field-list">
+                                                                <li>
+                                                                    <span>casekajsdh 1</span>
+                                                                    <span class="delete-icon">
+                                                                        <i class="fas fa-trash-alt"></i>
+                                                                    </span>
+                                                                </li>
+                                                                <li>
+                                                                    <span>casekajsdh 2</span>
+                                                                    <span class="delete-icon">
+                                                                        <i class="fas fa-trash-alt"></i>
+                                                                    </span>
+                                                                </li>
+                                                                <li>
+                                                                    <span>casekajsdh 3</span>
+                                                                    <span class="delete-icon">
+                                                                        <i class="fas fa-trash-alt"></i>
+                                                                    </span>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-lg-4 col-md-6 p-t-10">
+                                                    <div class="mdl-textfield txt-full-width">
+                                                        <label for="finalVerdictProvidedBy">अन्तिम फैसला गर्ने
+                                                            निकाय</label>
+                                                        <input id="finalVerdictProvidedBy" type="text"
+                                                            class="form-control mdl-textfield_input">
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 col-md-6 p-t-10">
+                                                    <div class="row">
+                                                        <div class="col-lg-12 col-md-12 col-12">
+                                                            <div class="mdl-textfield txt-full-width mb-0">
+                                                                <label for="finalVerdictDate">अन्तिम फैसला मिति</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-6 p-t-10">
+                                                            <div class="mdl-textfield txt-full-width">
+                                                                <label for="finalVerdictDateYear">बर्ष</label>
+                                                                <input id="finalVerdictDateYear" type="number"
+                                                                    class="form-control mdl-textfield_input">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-6 p-t-10">
+                                                            <div class="mdl-textfield txt-full-width">
+                                                                <label for="finalVerdictDateMonth">महिना</label>
+                                                                <input id="finalVerdictDateMonth" type="number"
+                                                                    class="form-control mdl-textfield_input">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-6 p-t-10">
+                                                            <div class="mdl-textfield txt-full-width">
+                                                                <label for="finalVerdictDateDay">दिन</label>
+                                                                <input id="finalVerdictDateDay" type="number"
+                                                                    class="form-control mdl-textfield_input">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4 col-md-6 p-t-10">
+                                                    <div class="mdl-textfield txt-full-width">
+                                                        <label for="recordOfAppeal">पुनरावेदन नपरेको प्रमाण</label>
+                                                        <input id="recordOfAppeal" type="text"
+                                                            class="form-control mdl-textfield_input">
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-12">
+                                                    <div class="mdl-textfield txt-full-width">
+                                                        <div class="sub-header">
+                                                            <header>कैद सम्बन्धि बिवरण</header>
+                                                        </div>
+                                                        <div class="sub- dashed-divider mt-1"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 col-md-6 p-t-10">
+                                                    <div class="row">
+                                                        <div class="col-lg-12 col-md-12 col-12">
+                                                            <div class="mdl-textfield txt-full-width mb-0">
+                                                                <label for="DateOfImprisonment">कैद परेको मिति</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-6 p-t-10">
+                                                            <div class="mdl-textfield txt-full-width">
+                                                                <label for="DateOfImprisonmentYear">बर्ष</label>
+                                                                <input id="DateOfImprisonmentYear" type="number"
+                                                                    class="form-control mdl-textfield_input">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-6 p-t-10">
+                                                            <div class="mdl-textfield txt-full-width">
+                                                                <label for="DateOfImprisonmentMonth">महिना</label>
+                                                                <input id="DateOfImprisonmentMonth" type="number"
+                                                                    class="form-control mdl-textfield_input">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-6 p-t-10">
+                                                            <div class="mdl-textfield txt-full-width">
+                                                                <label for="DateOfImprisonmentDay">दिन</label>
+                                                                <input id="DateOfImprisonmentDay" type="number"
+                                                                    class="form-control mdl-textfield_input">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 col-md-6 p-t-10">
+                                                    <div class="row">
+                                                        <div class="col-lg-12 col-md-12 col-12">
+                                                            <div class="mdl-textfield txt-full-width mb-0">
+                                                                <label for="totalSentenceDate">तोकिएको कैद</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-6 p-t-10">
+                                                            <div class="mdl-textfield txt-full-width">
+                                                                <label for="totalSentenceDateYear">बर्ष</label>
+                                                                <input id="totalSentenceDateYear" type="number"
+                                                                    class="form-control mdl-textfield_input">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-6 p-t-10">
+                                                            <div class="mdl-textfield txt-full-width">
+                                                                <label for="totalSentenceDateMonth">महिना</label>
+                                                                <input id="totalSentenceDateMonth" type="number"
+                                                                    class="form-control mdl-textfield_input">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-6 p-t-10">
+                                                            <div class="mdl-textfield txt-full-width">
+                                                                <label for="totalSentenceDateDay">दिन</label>
+                                                                <input id="totalSentenceDateDay" type="number"
+                                                                    class="form-control mdl-textfield_input">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 col-md-6 p-t-10">
+                                                    <div class="row">
+                                                        <div class="col-lg-12 col-md-12 col-12">
+                                                            <div class="mdl-textfield txt-full-width mb-0">
+                                                                <label for="prisonerReleaseDate">कैद्पुर्जी उल्लेखित
+                                                                    छुटिजाने मिती</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-6 p-t-10">
+                                                            <div class="mdl-textfield txt-full-width">
+                                                                <label for="prisonerReleaseDateYear">बर्ष</label>
+                                                                <input id="prisonerReleaseDateYear" type="number"
+                                                                    class="form-control mdl-textfield_input">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-6 p-t-10">
+                                                            <div class="mdl-textfield txt-full-width">
+                                                                <label for="prisonerReleaseDateMonth">महिना</label>
+                                                                <input id="prisonerReleaseDateMonth" type="number"
+                                                                    class="form-control mdl-textfield_input">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-6 p-t-10">
+                                                            <div class="mdl-textfield txt-full-width">
+                                                                <label for="prisonerReleaseDateDay">दिन</label>
+                                                                <input id="prisonerReleaseDateDay" type="number"
+                                                                    class="form-control mdl-textfield_input">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-12 col-md-12 p-t-10">
+                                                    <div class="mdl-textfield txt-full-width d-inline-block">
+                                                        <label class="d-block" for="penaltyImposed">जरिवाना</label>
+                                                        <div class="custom-control custom-radio custom-control-inline">
+                                                            <input class="custom-control-input" id="penaltyImposedYes"
+                                                                name="penaltyImposed" type="radio"
+                                                                value="penaltyImposed">
+                                                            <label class="custom-control-label"
+                                                                for="penaltyImposedYes">छ</label>
+                                                        </div>
+                                                        <div class="custom-control custom-radio custom-control-inline">
+                                                            <input class="custom-control-input" id="penaltyImposedNo"
+                                                                name="penaltyImposed" type="radio"
+                                                                value="penaltyImposed">
+                                                            <label class="custom-control-label"
+                                                                for="penaltyImposedNo">छैन</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <div class="mdl-textfield txt-full-width d-inline-block">
+                                                                <label for="penaltyImposedFine">जरिवाना (In Rs.)</label>
+                                                                <input id="penaltyImposedFine" type="text"
+                                                                    class="form-control mdl-textfield_input">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-12 col-md-12 p-t-10">
+                                                    <div class="mdl-textfield txt-full-width d-inline-block">
+                                                        <label class="d-block" for="stayedInPoliceCustody">प्रहरी
+                                                            हिरासतमा बसेको/ नबसेको</label>
+                                                        <div class="custom-control custom-radio custom-control-inline">
+                                                            <input class="custom-control-input"
+                                                                id="stayedInPoliceCustodyYes"
+                                                                name="stayedInPoliceCustody" type="radio"
+                                                                value="stayedInPoliceCustody">
+                                                            <label class="custom-control-label"
+                                                                for="stayedInPoliceCustodyYes">बसेको</label>
+                                                        </div>
+                                                        <div class="custom-control custom-radio custom-control-inline">
+                                                            <input class="custom-control-input"
+                                                                id="stayedInPoliceCustodyNo"
+                                                                name="stayedInPoliceCustody" type="radio"
+                                                                value="stayedInPoliceCustody">
+                                                            <label class="custom-control-label"
+                                                                for="stayedInPoliceCustodyNo">नबसेको</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-lg-6 col-12">
+                                                            <div class="row">
+                                                                <div class="col-lg-12 col-md-12 col-12">
+                                                                    <div class="mdl-textfield txt-full-width mb-0">
+                                                                        <label for="stayedInPoliceCustodyDate">प्रहरी
+                                                                            हिरासतमा बसेको मिती</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-4 col-md-6 p-t-10">
+                                                                    <div class="mdl-textfield txt-full-width">
+                                                                        <label
+                                                                            for="stayedInPoliceCustodyDateYear">बर्ष</label>
+                                                                        <input id="stayedInPoliceCustodyDateYear"
+                                                                            type="number"
+                                                                            class="form-control mdl-textfield_input">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-4 col-md-6 p-t-10">
+                                                                    <div class="mdl-textfield txt-full-width">
+                                                                        <label
+                                                                            for="stayedInPoliceCustodyDateMonth">महिना</label>
+                                                                        <input id="stayedInPoliceCustodyDateMonth"
+                                                                            type="number"
+                                                                            class="form-control mdl-textfield_input">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-4 col-md-6 p-t-10">
+                                                                    <div class="mdl-textfield txt-full-width">
+                                                                        <label
+                                                                            for="stayedInPoliceCustodyDateDay">दिन</label>
+                                                                        <input id="stayedInPoliceCustodyDateDay"
+                                                                            type="number"
+                                                                            class="form-control mdl-textfield_input">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-12 col-md-12 p-t-10">
+                                                    <div class="mdl-textfield txt-full-width d-inline-block">
+                                                        <label class="d-block" for="stayedInTrial">प्पुर्पक्षमा बसेको/
+                                                            नबसेको</label>
+                                                        <div class="custom-control custom-radio custom-control-inline">
+                                                            <input class="custom-control-input" id="stayedInTrialYes"
+                                                                name="stayedInTrial" type="radio" value="stayedInTrial">
+                                                            <label class="custom-control-label"
+                                                                for="stayedInTrialYes">बसेको</label>
+                                                        </div>
+                                                        <div class="custom-control custom-radio custom-control-inline">
+                                                            <input class="custom-control-input" id="stayedInTrialNo"
+                                                                name="stayedInTrial" type="radio" value="stayedInTrial">
+                                                            <label class="custom-control-label"
+                                                                for="stayedInTrialNo">नबसेको</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-lg-6 col-12">
+                                                            <div class="row">
+                                                                <div class="col-lg-12 col-md-12 col-12">
+                                                                    <div class="mdl-textfield txt-full-width mb-0">
+                                                                        <label for="stayedInTrialDate">प्पुर्पक्षमा
+                                                                            बसेको मिती</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-4 col-md-6 p-t-10">
+                                                                    <div class="mdl-textfield txt-full-width">
+                                                                        <label for="stayedInTrialDateYear">बर्ष</label>
+                                                                        <input id="stayedInTrialDateYear" type="number"
+                                                                            class="form-control mdl-textfield_input">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-4 col-md-6 p-t-10">
+                                                                    <div class="mdl-textfield txt-full-width">
+                                                                        <label
+                                                                            for="stayedInTrialDateMonth">महिना</label>
+                                                                        <input id="stayedInTrialDateMonth" type="number"
+                                                                            class="form-control mdl-textfield_input">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-4 col-md-6 p-t-10">
+                                                                    <div class="mdl-textfield txt-full-width">
+                                                                        <label for="stayedInTrialDateDay">दिन</label>
+                                                                        <input id="stayedInTrialDateDay" type="number"
+                                                                            class="form-control mdl-textfield_input">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-12 col-md-12 p-t-10">
+                                                    <div class="mdl-textfield txt-full-width d-inline-block">
+                                                        <label class="d-block" for="imprisonedInSameCrime">कारागारमा
+                                                            थुनामा बसेर थुना मुक्त भई सोही मु्द्दामा पुन कारागार चलान भए
+                                                            नभएको</label>
+                                                        <div class="custom-control custom-radio custom-control-inline">
+                                                            <input class="custom-control-input"
+                                                                id="imprisonedInSameCrimeYes"
+                                                                name="imprisonedInSameCrime" type="radio"
+                                                                value="imprisonedInSameCrime">
+                                                            <label class="custom-control-label"
+                                                                for="imprisonedInSameCrimeYes">भएको</label>
+                                                        </div>
+                                                        <div class="custom-control custom-radio custom-control-inline">
+                                                            <input class="custom-control-input"
+                                                                id="imprisonedInSameCrimeNo"
+                                                                name="imprisonedInSameCrime" type="radio"
+                                                                value="imprisonedInSameCrime">
+                                                            <label class="custom-control-label"
+                                                                for="imprisonedInSameCrimeNo">नभएको</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-lg-6 p-t-10">
+                                                            <div class="mdl-textfield mdl-js-textfield txt-full-width">
+                                                                <label for="imprisonedInSameCrimeDetail">बिवरण </label>
+                                                                <textarea class="form-control"
+                                                                    id="imprisonedInSameCrimeDetail"
+                                                                    rows="8"></textarea>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 col-md-6 p-t-10">
+                                                    <div class="row">
+                                                        <div class="col-lg-12 col-md-12 col-12">
+                                                            <div class="mdl-textfield txt-full-width mb-0">
+                                                                <label for="totalCompletedImprisonTime">प्भुक्तान
+                                                                    कैद मिती</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-6 p-t-10">
+                                                            <div class="mdl-textfield txt-full-width">
+                                                                <label for="totalCompletedImprisonTimeYear">बर्ष</label>
+                                                                <input id="totalCompletedImprisonTimeYear" type="number"
+                                                                    class="form-control mdl-textfield_input">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-6 p-t-10">
+                                                            <div class="mdl-textfield txt-full-width">
+                                                                <label
+                                                                    for="totalCompletedImprisonTimeMonth">महिना</label>
+                                                                <input id="totalCompletedImprisonTimeMonth"
+                                                                    type="number"
+                                                                    class="form-control mdl-textfield_input">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-6 p-t-10">
+                                                            <div class="mdl-textfield txt-full-width">
+                                                                <label for="totalCompletedImprisonTimeDay">दिन</label>
+                                                                <input id="totalCompletedImprisonTimeDay" type="number"
+                                                                    class="form-control mdl-textfield_input">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4 col-md-6 p-t-10">
+                                                    <div class="mdl-textfield txt-full-width">
+                                                        <label
+                                                            for="totalCompletedImprisonTimePercentage">प्रतिशत</label>
+                                                        <input id="totalCompletedImprisonTimePercentage" type="number"
+                                                            class="form-control mdl-textfield_input">
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-12">
+                                                    <div class="mdl-textfield txt-full-width">
+                                                        <div class="sub-header">
+                                                            <header>अन्य विवरण</header>
+                                                        </div>
+                                                        <div class="sub- dashed-divider mt-1"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-12 col-md-12 p-t-10">
+                                                    <div class="mdl-textfield txt-full-width d-inline-block">
+                                                        <label class="d-block" for="isOldAgePerson">बृद ब्यक्ती</label>
+                                                        <div class="custom-control custom-radio custom-control-inline">
+                                                            <input class="custom-control-input" id="isOldAgePersonYes"
+                                                                name="isOldAgePerson" type="radio"
+                                                                value="isOldAgePerson">
+                                                            <label class="custom-control-label"
+                                                                for="isOldAgePersonYes">हो</label>
+                                                        </div>
+                                                        <div class="custom-control custom-radio custom-control-inline">
+                                                            <input class="custom-control-input" id="isOldAgePersonNo"
+                                                                name="isOldAgePerson" type="radio"
+                                                                value="isOldAgePerson">
+                                                            <label class="custom-control-label"
+                                                                for="isOldAgePersonNo">होईन</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-lg-4 col-md-6 p-t-10">
+                                                            <div class="select-input mdl-textfield txt-full-width">
+                                                                <label class="floating-label" for="oldAgePersonAge">बृद
+                                                                    ब्यक्तीको उमेर</label>
+                                                                <select class="mdl-textfield_input form-control"
+                                                                    id="oldAgePersonAge">
+                                                                    <option disabled="true" selected="true">---Please
+                                                                        Select---
+                                                                    </option>
+                                                                    <option value="६५ देखि ७०">
+                                                                        ६५ देखि ७०
+                                                                    </option>
+                                                                    <option value="७० देखि ७५">
+                                                                        ७० देखि ७५
+                                                                    </option>
+                                                                    <option value="७५+">
+                                                                        ७५+
+                                                                    </option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-12 col-md-12 p-t-10">
+                                                    <div class="mdl-textfield txt-full-width d-inline-block">
+                                                        <label class="d-block" for="isSick">रोगी</label>
+                                                        <div class="custom-control custom-radio custom-control-inline">
+                                                            <input class="custom-control-input" id="isSickYes"
+                                                                name="isSick" type="radio" value="isSick">
+                                                            <label class="custom-control-label"
+                                                                for="isSickYes">हो</label>
+                                                        </div>
+                                                        <div class="custom-control custom-radio custom-control-inline">
+                                                            <input class="custom-control-input" id="isSickNo"
+                                                                name="isSick" type="radio" value="isSick">
+                                                            <label class="custom-control-label"
+                                                                for="isSickNo">होईन</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-lg-4 col-md-6 p-t-10">
+                                                            <div class="mdl-textfield txt-full-width">
+                                                                <label for="typeOfSickness">रोग को प्रकार</label>
+                                                                <input id="typeOfSickness" type="text"
+                                                                    class="form-control mdl-textfield_input">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-6 p-t-10">
+                                                            <div class="mdl-textfield txt-full-width d-inline-block">
+                                                                <label class="d-block" for="completelyBlind">दुबै आखा
+                                                                    नदेख्ने</label>
+                                                                <div
+                                                                    class="custom-control custom-radio custom-control-inline">
+                                                                    <input class="custom-control-input"
+                                                                        id="completelyBlindYes" name="completelyBlind"
+                                                                        type="radio" value="completelyBlind">
+                                                                    <label class="custom-control-label"
+                                                                        for="completelyBlindYes">हो</label>
+                                                                </div>
+                                                                <div
+                                                                    class="custom-control custom-radio custom-control-inline">
+                                                                    <input class="custom-control-input"
+                                                                        id="completelyBlindNo" name="completelyBlind"
+                                                                        type="radio" value="completelyBlind">
+                                                                    <label class="custom-control-label"
+                                                                        for="completelyBlindNo">होईन</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-6 p-t-10">
+                                                            <div class="mdl-textfield txt-full-width d-inline-block">
+                                                                <label class="d-block" for="twoLegNotFunctional">दुबै
+                                                                    खुटा नचल्ने</label>
+                                                                <div
+                                                                    class="custom-control custom-radio custom-control-inline">
+                                                                    <input class="custom-control-input"
+                                                                        id="twoLegNotFunctionalYes"
+                                                                        name="twoLegNotFunctional" type="radio"
+                                                                        value="twoLegNotFunctional">
+                                                                    <label class="custom-control-label"
+                                                                        for="twoLegNotFunctionalYes">हो</label>
+                                                                </div>
+                                                                <div
+                                                                    class="custom-control custom-radio custom-control-inline">
+                                                                    <input class="custom-control-input"
+                                                                        id="twoLegNotFunctionalNo"
+                                                                        name="twoLegNotFunctional" type="radio"
+                                                                        value="twoLegNotFunctional">
+                                                                    <label class="custom-control-label"
+                                                                        for="twoLegNotFunctionalNo">होईन</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-6 p-t-10">
+                                                            <div class="mdl-textfield txt-full-width d-inline-block">
+                                                                <label class="d-block" for="onBedNeedSupport">ओछ्यान
+                                                                    परेको</label>
+                                                                <div
+                                                                    class="custom-control custom-radio custom-control-inline">
+                                                                    <input class="custom-control-input"
+                                                                        id="onBedNeedSupportYes" name="onBedNeedSupport"
+                                                                        type="radio" value="onBedNeedSupport">
+                                                                    <label class="custom-control-label"
+                                                                        for="onBedNeedSupportYes">हो</label>
+                                                                </div>
+                                                                <div
+                                                                    class="custom-control custom-radio custom-control-inline">
+                                                                    <input class="custom-control-input"
+                                                                        id="onBedNeedSupportNo" name="onBedNeedSupport"
+                                                                        type="radio" value="onBedNeedSupport">
+                                                                    <label class="custom-control-label"
+                                                                        for="onBedNeedSupportNo">होईन</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-6 p-t-10">
+                                                            <div class="mdl-textfield txt-full-width">
+                                                                <label for="otherSickness">अन्य</label>
+                                                                <input id="otherSickness" type="text"
+                                                                    class="form-control mdl-textfield_input">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-6 p-t-10">
+                                                            <div class="mdl-textfield txt-full-width d-inline-block">
+                                                                <label class="d-block" for="doctorRecommendation">मेडिकल
+                                                                    बोर्ड अथवा सरकारी चिकित्सकको सिफारिस</label>
+                                                                <div
+                                                                    class="custom-control custom-radio custom-control-inline">
+                                                                    <input class="custom-control-input"
+                                                                        id="doctorRecommendationYes"
+                                                                        name="doctorRecommendation" type="radio"
+                                                                        value="doctorRecommendation">
+                                                                    <label class="custom-control-label"
+                                                                        for="doctorRecommendationYes">छ </label>
+                                                                </div>
+                                                                <div
+                                                                    class="custom-control custom-radio custom-control-inline">
+                                                                    <input class="custom-control-input"
+                                                                        id="doctorRecommendationNo"
+                                                                        name="doctorRecommendation" type="radio"
+                                                                        value="doctorRecommendation">
+                                                                    <label class="custom-control-label"
+                                                                        for="doctorRecommendationNo">छैन </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-lg-4 col-md-6 p-t-10">
+                                                    <div class="mdl-textfield txt-full-width">
+                                                        <label for="remarksAndSpecialRequest">कैफियत वा विशेष
+                                                            अनुरोध</label>
+                                                        <input id="remarksAndSpecialRequest" type="text"
+                                                            class="form-control mdl-textfield_input">
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4 col-md-6 p-t-10">
+                                                    <div class="mdl-textfield txt-full-width d-inline-block">
+                                                        <label class="d-block" for="sentenceDiscountSuitable">कैद कट्टी
+                                                            गर्ने उपयुक्त छ / छैन</label>
+                                                        <div class="custom-control custom-radio custom-control-inline">
+                                                            <input class="custom-control-input"
+                                                                id="sentenceDiscountSuitableYes"
+                                                                name="sentenceDiscountSuitable" type="radio"
+                                                                value="sentenceDiscountSuitable">
+                                                            <label class="custom-control-label"
+                                                                for="sentenceDiscountSuitableYes">छ </label>
+                                                        </div>
+                                                        <div class="custom-control custom-radio custom-control-inline">
+                                                            <input class="custom-control-input"
+                                                                id="sentenceDiscountSuitableNo"
+                                                                name="sentenceDiscountSuitable" type="radio"
+                                                                value="sentenceDiscountSuitable">
+                                                            <label class="custom-control-label"
+                                                                for="sentenceDiscountSuitableNo">छैन </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-lg-12 p-t-10 text-center mt-3">
+                                                    <div class="multiple-btn-wrapper">
+                                                        <button type="button" class="btn primary-btn fill-primary">
+                                                            Save
+                                                        </button>
+                                                        <button type="reset"
+                                                            class="btn black-btn btn-outline fill-transparent">
+                                                            Reset
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+        </section>
+
+        <!-- footer start -->
+        <footer>
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-12 col-lg-12">
+                            <div class="copyright-text">
+                                Copyright © 2021 Department of Prison Management.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer close -->
+
+        <script type="text/javascript" src="assets/js/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="assets/js/function.js"></script>
+    </body>
+
+</html>
