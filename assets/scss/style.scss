@@ -313,18 +313,21 @@ a.btn.white-btn.fill-white:hover {
   // box-shadow: 0 24px 48px -12px rgb(36 166 109 / 0.35);
 }
 
-button.btn.black-btn.btn-outline {
+button.btn.black-btn.btn-outline,
+a.btn.black-btn.btn-outline {
   // padding: 14px 34px;
 }
 
-button.btn.black-btn.btn-outline.fill-transparent {
+button.btn.black-btn.btn-outline.fill-transparent,
+a.btn.black-btn.btn-outline.fill-transparent {
   background: transparent;
   color: $fill-dark-secondary;
   border-color: $fill-dark-secondary;
   // box-shadow: 0 18px 40px -12px rgba(33, 33, 33, 0.16);
 }
 
-button.btn.black-btn.btn-outline.fill-transparent:hover {
+button.btn.black-btn.btn-outline.fill-transparent:hover,
+a.btn.black-btn.btn-outline.fill-transparent:hover {
   background: $fill-dark-secondary;
   border-color: $fill-dark-secondary;
   color: $white-color;
@@ -342,8 +345,8 @@ a.btn.black-btn {
 
 button.btn.black-btn:hover,
 a.btn.black-btn:hover {
-  background: $text-dark-secondary;
-  border-color: $text-dark-secondary;
+  background: $text-dark;
+  border-color: $text-dark;
   color: $white-color;
   // box-shadow: 0 24px 48px -12px rgb(104 104 104 / 0.6);
 }
@@ -2141,8 +2144,22 @@ table td .multiple-btn-wrapper {
   margin: 0 4px;
 }
 
+.card-header-wrapper .tools {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin-left: auto;
+}
+
 .card-header-wrapper .tools .btn {
-  margin-bottom: 0;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  margin-right: 10px;
+}
+
+.card-header-wrapper .tools .btn:last-child {
+  margin-right: 0;
 }
 
 .card-head .tools .btn-color {

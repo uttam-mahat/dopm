@@ -299,13 +299,15 @@ a.btn.white-btn.fill-white:hover {
   color: #fff;
 }
 
-button.btn.black-btn.btn-outline.fill-transparent {
+button.btn.black-btn.btn-outline.fill-transparent,
+a.btn.black-btn.btn-outline.fill-transparent {
   background: transparent;
   color: #707070;
   border-color: #707070;
 }
 
-button.btn.black-btn.btn-outline.fill-transparent:hover {
+button.btn.black-btn.btn-outline.fill-transparent:hover,
+a.btn.black-btn.btn-outline.fill-transparent:hover {
   background: #707070;
   border-color: #707070;
   color: #fff;
@@ -320,8 +322,8 @@ a.btn.black-btn {
 
 button.btn.black-btn:hover,
 a.btn.black-btn:hover {
-  background: #707070;
-  border-color: #707070;
+  background: #242424;
+  border-color: #242424;
   color: #fff;
 }
 
@@ -1960,8 +1962,22 @@ table td .multiple-btn-wrapper {
   margin: 0 4px;
 }
 
+.card-header-wrapper .tools {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin-left: auto;
+}
+
 .card-header-wrapper .tools .btn {
-  margin-bottom: 0;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  margin-right: 10px;
+}
+
+.card-header-wrapper .tools .btn:last-child {
+  margin-right: 0;
 }
 
 .card-head .tools .btn-color {
